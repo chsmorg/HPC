@@ -1,0 +1,7 @@
+homework_5 : main.cu 
+	nvcc -o homework5 main.cu hw6.cu readData.cpp hw6.cpp
+
+.PHONY : clean
+clean :
+	rm -rf homework5
+
